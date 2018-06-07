@@ -26,7 +26,7 @@ public class ReactiveSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
+       /* http
                 .authorizeRequests()
                     .antMatchers("/", "/registration", "/static/**", "/activate/*").permitAll()
                     .anyRequest().authenticated()
@@ -34,7 +34,7 @@ public class ReactiveSecurityConfig extends WebSecurityConfigurerAdapter {
                     .formLogin()
                     .loginPage("/login").permitAll()
                 .and()
-                    .logout().permitAll();
+                    .logout().permitAll();*/
     }
 
     @Override
